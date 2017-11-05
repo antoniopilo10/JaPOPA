@@ -37,7 +37,7 @@ iframe{
 
 #logoheader {
 	float: left;
-	padding: 15px 0 0 20px;
+	/*padding: 15px 0 0 20px;*/
 }
 
 #topmenu li{
@@ -183,6 +183,7 @@ footer {
 footer a, footer li{
 	color: white;
 	display: block;
+	margin-top: 5px;
 }
 
 footer p{
@@ -204,8 +205,8 @@ section #sobrenosotros {
 
 #contenedorbodyinicio {
 	width: 100%;
-	background-image: url(https://k30.kn3.net/taringa/9/A/5/1/9/E/linkz_2_3_4/AAD.jpg);
-	background-size:contain;
+	background-image: url(../imagenes/costa1.jpg);
+	background-size:cover;
 	text-align:center;
 }
 
