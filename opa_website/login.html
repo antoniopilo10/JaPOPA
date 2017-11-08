@@ -8,12 +8,28 @@
 	<script type="text/javascript" src="../opa_website/js/opa.js"></script>
 </head>	
 <body>
-	<header id="logo-header">
+	<header id="logoheader">
 
 		
 		<div id="img-header"> <a href="..//opa_website/inicio.html"><img id="logotipo" src="../opa_website/imagenes/logotipoopa.png"></a></div>	
 		
-		
+		<nav id="topmenu">
+			<div id="buscar">
+				<form action="" method="get">
+					<input id="search" type="text" value="¿Que Estas Buscando?" onfocus="if (this.value == '¿Que Estas Buscando?') {this.value = '';}" onblur="if (this.value == '') {this.value = '¿Que Estas Buscando?';}" />
+					<input type="button" value="buscar" id="botonbuscar">
+				</form>
+			</div>
+			<div id="der">
+				<ul>
+					<li><div id="ingresa"><a href="../opa_website/login.html"><u><p class="carrito_ingresar">Ingresar</p></u><img id="ing" src="imagenes/ing.png"></a></div></li>
+					<li><div id="carrito">
+						<a href="../opa_website/micompra.html" target="blank"><u><p class="carrito_ingresar">Mi carrito</p></u><img id="carro" src="imagenes/carrito.png" ></a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
 		<nav id="menu">
 			
 			
@@ -26,7 +42,7 @@
 
 	<div class="salto"> </div>
 
-	<div id="contenedorbody">
+    <div id="contenedorbo">
 
 		<div id="login">
 			<form action="" method="get" id="login2">
