@@ -14,7 +14,7 @@ var x = setInterval(function() {
     var distance = tomorrow - now;
     
     // Time calculations for  hours, minutes and seconds
-  
+
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
@@ -26,8 +26,8 @@ var x = setInterval(function() {
     
     // If the count down is over, write some text 
     if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "--EXPIRED--";
+    	clearInterval(x);
+    	document.getElementById("demo").innerHTML = "--EXPIRED--";
     }
 }, 1000);
 
@@ -77,41 +77,59 @@ var x = setInterval(function() {
     
     function siVacioV2(valor){
       return valor == "";
-    } */
-    
+  } */
 
-    function enviar() {
+
+  function enviar() {
   //verificamos que al enviar la contraseña y su confirmacion sean iguales
 
   var pass = document.getElementById("password").value;
   var compass = document.getElementById("confpassword").value;
   if (pass != compass){
-   document.getElementById("alerta").innerHTML = "Su contraseña y su confirmación de contraseña deben ser identicos!";
-    return false;
+  	document.getElementById("alerta").innerHTML = "Su contraseña y su confirmación de contraseña deben ser identicos!";
+  	return false;
   }
 }
 
-  
-      
- 
-      $(function(){
-  $(".slides").slidesjs({
-    play: {
-      active: true,
+
+
+
+$(function(){
+	$(".slides").slidesjs({
+		play: {
+			active: true,
         // [boolean] Generate the play and stop buttons.
         // You cannot use your own buttons. Sorry.
-      effect: "slide",
+        effect: "slide",
         // [string] Can be either "slide" or "fade".
-      interval: 3000,
+        interval: 3000,
         // [number] Time spent on each slide in milliseconds.
-      auto: true,
+        auto: true,
         // [boolean] Start playing the slideshow on load.
-      swap: true,
+        swap: true,
         // [boolean] show/hide stop and play buttons
-      pauseOnHover: false,
+        pauseOnHover: false,
         // [boolean] pause a playing slideshow on hover
-      restartDelay: 2500
+        restartDelay: 2500
         // [number] restart delay on inactive slideshow
     }
-  });
+});
+});
+
+//flechita :D
+$(document).ready(function(){
+
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollup').fadeIn();
+		} else {
+			$('.scrollup').fadeOut();
+		}
+	});
+
+	$('.scrollup').click(function(){
+		$("html, body").animate({ scrollTop: 0 }, 600);
+		return false;
+	});
+
 });
