@@ -1,0 +1,87 @@
+<h1>Login</h1>
+
+<h5 id="loginErrorTag" style="display:none; color:red">Nombre de usuario o contraseña incorrectos!</h5>
+<div>
+    <label for="username">Nombre de usuario:</label>
+    <input type="text" name="username" id="userNameInput">
+</div>
+<div>
+    <label for="password">Contraseña:</label>
+    <input type="password" name="password" id="passwordInput">
+</div>
+<div>
+    <button onclick="login()">Login</button>
+</div>
+
+
+<div style="display:table-caption; margin-top: 40px; border:1px solid black; padding:20px">
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" name="username" id="newUserNameInput">
+    
+        <label for="password">Contraseña:</label>
+        <input type="password" name="password" id="newPasswordInput">
+    
+        <label for="password">Repetir Contraseña:</label>
+        <input type="password" name="password" id="newPasswordInputConfirmation">
+
+        <button style="margin-top: 15px" onclick="register()">Registrarse</button>
+</div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/resources/js/services.js"></script>
+
+<script type="text/javascript">
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    function login() {
+        var username = document.getElementById('userNameInput').value;
+        var password = document.getElementById('passwordInput').value;
+        if (username && password) {
+            var loginEndpoint = '/users?name=' + username;
+            read(loginEndpoint, function (user) {
+                if (user.length != 0 && (user[0].password == password)) {
+                    console.log('login con pass ' + password);
+                    setCookie('isLogged', true, 7);
+                    setCookie('username', username, 7);
+                    document.location = '/index.html';
+                } else {
+                    document.getElementById('loginErrorTag').style.display = 'inline-block';
+                }
+            });
+        }
+
+    }
+
+    function register(){
+        var username = document.getElementById('newUserNameInput').value;
+        var password = document.getElementById('newPasswordInput').value;
+        var passwordConfirmation = document.getElementById('newPasswordInputConfirmation').value;
+        if(password != passwordConfirmation || !username || !password || !passwordConfirmation){
+            alert("Datos no validos!");
+            return;
+        }
+        //Creamos el nuevo objeto
+        var NewUser = new Object();
+        NewUser.name = username;
+        NewUser.password = password;
+        NewUser.cart = [];
+
+        var usersEndpoint = "/users/";
+        var jsonUserData = JSON.stringify(NewUser);
+
+        create(usersEndpoint, jsonUserData, function(response){
+            console.log(response);
+        });
+    }
+
+    
+</script>

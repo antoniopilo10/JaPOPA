@@ -1,0 +1,61 @@
+<h4>Agregar oferta</h4>
+
+<style>
+    #new-deal-container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        border: 1px solid #333A56;
+        padding: 20px;
+    }
+
+    input {
+        width: 98%;
+    }
+
+    #register-deal {
+        margin-top: 15px;
+    }
+
+    input[type="submit"] {
+        background-color: #333A56;
+        border: none;
+        color: white;
+        padding: 10px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+</style>
+<div id="new-deal-container">
+    <form action="/deals/register" method="POST">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label>Precio</label>
+        <div id="currency-container">
+
+            <select id="moneda" name="moneda" style="width:40%">
+                        <option value="u$d">U$D</option>
+                        <option value="$">$</option>
+                        <option value="EUR">EUR</option>
+            </select>
+
+            <input type="number" id="precio" name="precio" style="width:57%">
+
+        </div>
+
+        <label for="lugar">Lugar</label>
+        <input type="text" id="lugar" name="lugar">
+
+        <label for="vencimiento">Vencimiento</label>
+        <input type="date" id="vencimiento" name="vencimiento">
+
+        <input id="register-deal" type="submit" value="REGISTRAR!">
+
+    </form>
+
+</div>
