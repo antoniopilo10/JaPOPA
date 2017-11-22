@@ -1,6 +1,6 @@
 # OPA WebSite
 
-Proyecto _Jovenes a Programar_ *Matias Segade  Antonio Pilo*
+Proyecto _Jovenes a Programar_ - *Matias Segade - Antonio Pilo*
 
 
 
