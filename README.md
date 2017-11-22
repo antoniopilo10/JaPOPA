@@ -1,11 +1,12 @@
 # OPA WebSite
 
-Proyecto _Jovenes a Programar_ - *Matias Segade - Antonio Pilo*
+Proyecto _Jovenes a Programar_ - Matias Segade - Antonio Pilo
 
 
 
 INSTRUCCIONES DE USO:
                         Descargar https://nodejs.org/es/download/
+                        
                         Luego de instalarlo, entrar a la consola del mismo.
                         Utilizar el comando cd y el lugar donde descargaste la carpeta y pulsamos enter
                         Por ejemplo: cd C:\Users\Ceibal\Documents\GitHub\JaPOPA\opa_website
