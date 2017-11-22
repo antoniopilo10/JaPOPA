@@ -1,8 +1,8 @@
 # OPA WebSite
 
-Proyecto _Jovenes a Programar_ 
+Proyecto _Jovenes a Programar_ *Matias Segade  Antonio Pilo*
 
-*Matias Segade  Antonio Pilo*
+
 
 INSTRUCCIONES DE USO:
                         Descargar https://nodejs.org/es/download/
