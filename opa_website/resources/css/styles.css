@@ -229,6 +229,9 @@ section #sobrenosotros {
 	z-index:-1;
 }
 
+#botoncar{
+	margin-top: 50px;
+}
 
 #login {
 	background-image: url("http://www.ariva.com.ph/wp-content/uploads/2015/03/SUMMER-HEADER-2015.png");
@@ -291,7 +294,7 @@ section #sobrenosotros {
 	font-family: "Homer Simpson", cursive;
 }
 #botonbuscar {
-	width:70px;
+	/*width:70px;*/
 	height:37px;
 	border-style:inset;
 	border-radius:20px;

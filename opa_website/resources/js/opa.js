@@ -173,3 +173,8 @@ $( "form" ).submit(function( event ) {
       $( "#mensaje" ).text( "Hay campos vacios, complete todos los campos!" ).show().fadeOut( 1000 );
       event.preventDefault();
     });*/
+
+    var contador=1; 
+    function incrementar() { 
+        document.getElementById("carritoo").innerHTML = "Mi carrito " + "(" + contador++ + ")";
+      } 

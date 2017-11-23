@@ -25,8 +25,8 @@ function renderHTML (data) {
         "<img src=" + data[i].imagen +">" + 
         '<p id="titulos">' + data[i].name + '</p>' +
         '<p>' + data[i].descripcion + '</p>' + '<br>'+
-        '<p>' + 'valoracion:' + '</p>' + 
-        '<p id="precio">' + data[i].precio + '</p>'; 
+        '<p id="precio" >' + data[i].precio + '</p>' +
+        '<input type="button" onClick="incrementar()" value="Agregar al carrito" id ="botoncar" class="btn">'; 
         // Agregamos en el contenedor de productos el html para cada dato del listado
         products.append(html);
     });
