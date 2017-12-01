@@ -7,24 +7,38 @@ Opa es una página web de ofertas tales como restaurantes, estetica, hoteles, vi
 GUIA DE FOLDER/ARCHIVOS
 -----------------------
     - opa_website
+    
           -index.html   Pagina principal de la web
+          
           -resources
+          
                 -css
-                     -style.css   Estilado de toda la pagina
-                -imagenes   Claramente contiene las imagenes utilizadas
+                     -style.css   
+                                Estilado de toda la pagina
+                                
+                -imagenes   
+                                Claramente contiene las imagenes utilizadas
+                                
                 -js
-                     -opa.js    Javascript que contiene reloj de ofertas, validaciones del formulario de registro, una funcion que al
+                     -opa.js    
+                                Javascript que contiene reloj de ofertas, validaciones del formulario de registro, una funcion que al
                                 hacer click en "Agregar al carrito" incrementa el valor en "Mi carrito" y un arreglo de fotos que se va 
                                 cambiando cada cierto tiempo (NOTA: esto estaba echo con jquery pero al agregar los articulos
                                 dinamicamente dejó de funcionar y por simpleza volvimos a javascript). Tambien hay una funcion de jquery 
                                 a ser detallada en la proxima seccion.
-        
-                     -productos.js    Mediante una llamada ajax, consume el API rest, obtiene el listado de productos y despliega los 
-                                      datos.
-                     -services.js     "Services facade to connect to backend"
+                                
+                     -productos.js    
+                                Mediante una llamada ajax, consume el API rest, obtiene el listado de productos y despliega los 
+                                datos.
+                                
+                     -services.js     
+                                "Services facade to connect to backend"
+                                
           -data
-                -info.json    Arreglo de json que contiene los productos (ofertas) a la espera de ser levantados por el  
-                              servidor.
+          
+                -info.json    
+                                Arreglo de json que contiene los productos (ofertas) a la espera de ser levantados por el  
+                                servidor.
                  
 FUNCIONALIDADES
 ---------------
@@ -60,20 +74,20 @@ LIBRERIAS UTILIZADAS
 RECURSOS EXTERNOS UTILIZADOS
 ----------------------------
     Principalmente nos inspiramos observando paginas web como: Woow, Tienda Mia y Amazon.
-    Tambien extrajimos ideas de [falcon masters](www.falconmasters.com "falconn") y https://www.w3schools.com/
+    Tambien extrajimos ideas de http://www.falconmasters.com/ y https://www.w3schools.com/
     Ademas de las diapositivas presentadas en el curso y los trabajos practicos realizados.
     Todas las imagenes fueron extraidas de distintas paginas web, a excepcion del logo que fue realizado por nosotros.
     
 INSTRUCTIVO DE USO DE JSON SERVER
 ---------------------------------
-    Descargar https://nodejs.org/es/download/
-    Luego de instalarlo, entrar a la consola del mismo.
-    Utilizar el comando cd y el lugar donde descargaste la carpeta de OPA y pulsamos enter
-    Por ejemplo: cd C:\Users\Ceibal\Documents\GitHub\JaPOPA\opa_website
-    Por ultimo levantamos el servidor con el siguiente comando:
-    node .\node_modules\json-server\bin\index.js .\data\info.json
-    Con esto lo que hicimos fue cargar dinamicante los articulos en venta.
-    Ya por ultimo solo queda ingresar a index.html y navegar en nuestra pagina
+    1. Descargar https://nodejs.org/es/download/
+    2. Luego de instalarlo, entrar a la consola del mismo.
+    3. Utilizar el comando cd y el lugar donde descargaste la carpeta de OPA y pulsamos enter
+    4. Por ejemplo: cd C:\Users\Ceibal\Documents\GitHub\JaPOPA\opa_website
+    5. Por ultimo levantamos el servidor con el siguiente comando:
+    6. node .\node_modules\json-server\bin\index.js .\data\info.json
+    7. Con esto lo que hicimos fue cargar dinamicante los articulos en venta.
+    8. Ya por ultimo solo queda ingresar a index.html y navegar en nuestra pagina.
                                 
                         
                         
