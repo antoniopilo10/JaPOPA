@@ -28,12 +28,13 @@ GUIA DE FOLDER/ARCHIVOS
 FUNCIONALIDADES
 ---------------
     -Registro de usuario
-                        Formulario para registro de usuario validado con required de html para que tenga que llenar todos los campos y
-                        con javascript, esto ultimo se utilizo para que el usuario no pueda poner una contraseña y una confirmacion de
+                        Formulario para registro de usuario validado con required de html para que el usuario esté obligado a llenar 
+                        todos los campos.
+                        Y con javascript, esto se utilizo para que el usuario no pueda poner una contraseña y una confirmacion de
                         contraseña distinta, para que al ingresar el dia de nacimiento y el año sean factibles por ejemplo no podes
                         decir que naciste el 53 de octubre de 1803. Cada uno de estos errores mencionados si succede, el formulario no
                         se envia y le sale un mensaje con el error pertinente cometido por el usuario.
-                        Por ultimo, si todos los campos estan completos correctamente, al dar click "Crear Cuenta" se oculta el
+                        Por ultimo, si todos los campos estan completos correctamente, al dar click en "Crear Cuenta" se oculta el
                         formulario y aparece un mensaje informando que el registro fue realizado correctamente.
     - Ademas de lo menciononado en la seccion anterior
                         Tenemos una flecha que aparece al bajar en la pagina, que al apretarla te desplaza hacia arriba.
@@ -44,6 +45,9 @@ RECURSOS INTERNOS
     -JSON 
           Como fue mencionado en la seccion (1), dentro de la carpeta data, está el archivo info.json que contiene un arreglo de json
           con los articulos detallados por id, name, descripcion, imagen y precio.
+    -AJAX
+          Como tambien fue mencionado en la seccion (1) es utilizado en el archivo productos.js y en services.js
+          para consumir el API rest.
           
 LIBRERIAS UTILIZADAS
 --------------------
