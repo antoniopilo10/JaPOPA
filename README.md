@@ -29,9 +29,9 @@ GUIA DE FOLDER/ARCHIVOS
 FUNCIONALIDADES
 ---------------
     -Registro de usuario
-                        Formulario para registro de usuario validado con required de html para que el usuario esté obligado a llenar 
+                        Formulario para registro de usuario, validado con required de html para que el usuario esté obligado a llenar 
                         todos los campos.
-                        Y con javascript, esto se utilizo para que el usuario no pueda poner una contraseña y una confirmacion de
+                        Y con javascript, esto se utilizo para que el usuario no pueda ingresar una contraseña y una confirmacion de
                         contraseña distinta, para que al ingresar el dia de nacimiento y el año sean factibles por ejemplo no podes
                         decir que naciste el 53 de octubre de 1803. Cada uno de estos errores mencionados si succede, el formulario no
                         se envia y le sale un mensaje con el error pertinente cometido por el usuario.
@@ -68,7 +68,7 @@ INSTRUCTIVO DE USO DE JSON SERVER
 ---------------------------------
     Descargar https://nodejs.org/es/download/
     Luego de instalarlo, entrar a la consola del mismo.
-    Utilizar el comando cd y el lugar donde descargaste la carpeta y pulsamos enter
+    Utilizar el comando cd y el lugar donde descargaste la carpeta de OPA y pulsamos enter
     Por ejemplo: cd C:\Users\Ceibal\Documents\GitHub\JaPOPA\opa_website
     Por ultimo levantamos el servidor con el siguiente comando:
     node .\node_modules\json-server\bin\index.js .\data\info.json
