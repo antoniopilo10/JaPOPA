@@ -34,10 +34,42 @@ FUNCIONALIDADES
                         decir que naciste el 53 de octubre de 1803. Cada uno de estos errores mencionados si succede, el formulario no
                         se envia y le sale un mensaje con el error pertinente cometido por el usuario.
                         Por ultimo, si todos los campos estan completos correctamente, al dar click "Crear Cuenta" se oculta el
-                        formulario y aparece un mensaje informando que registro fue realizado correctamente.
+                        formulario y aparece un mensaje informando que el registro fue realizado correctamente.
     - Ademas de lo menciononado en la seccion anterior
                         Tenemos una flecha que aparece al bajar en la pagina, que al apretarla te desplaza hacia arriba.
     - Los articulos están cargados dinamicamente desde un arreglo de json, utilizando json server.
+    
+RECURSOS INTERNOS
+-----------------
+    -JSON 
+          Como fue mencionado en la seccion (1), dentro de la carpeta data, está el archivo info.json que contiene un arreglo de json
+          con los articulos detallados por id, name, descripcion, imagen y precio.
+          
+LIBRERIAS UTILIZADAS
+--------------------
+    -JQUERY
+           Fue utilizado para la flecha mencionada en la seccion (2).
+    -BOOSTRAP
+           Solamente se utilizó para el boton "Agregar al carrito", con la clase "btn".
+           
+RECURSOS EXTERNOS UTILIZADOS
+----------------------------
+    Principalmente nos inspiramos observando paginas web como: Woow, Tienda Mia y Amazon.
+    Tambien extrajimos ideas de http://www.falconmasters.com/ y https://www.w3schools.com/
+    Ademas de las diapositivas presentadas en el curso y los trabajos practicos realizados.
+    Todas las imagenes fueron extraidas de distintas paginas web, a excepcion del logo que fue realizado por nosotros.
+    
+INSTRUCTIVO DE USO DE JSON SERVER
+---------------------------------
+    Descargar https://nodejs.org/es/download/
+    Luego de instalarlo, entrar a la consola del mismo.
+    Utilizar el comando cd y el lugar donde descargaste la carpeta y pulsamos enter
+    Por ejemplo: cd C:\Users\Ceibal\Documents\GitHub\JaPOPA\opa_website
+    Por ultimo levantamos el servidor con el siguiente comando:
+    node .\node_modules\json-server\bin\index.js .\data\info.json
+    Con esto lo que hicimos fue cargar dinamicante los articulos en venta.
+    Ya por ultimo solo queda ingresar a index.html y navegar en nuestra pagina
+                                
                         
                         
                         
