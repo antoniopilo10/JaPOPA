@@ -12,7 +12,7 @@ GUIA DE FOLDER/ARCHIVOS
                      -style.css   Estilado de toda la pagina
                 -imagenes   Claramente contiene las imagenes utilizadas
                 -js
-                     -opa.js    Javascript que contiene reloj de ofertas, validaciones del formulario de registro, una funcion que al                                     hacer click en "Agregar al carrito" incrementa el valor en "Mi carrito" y un arreglo de fotos que se va                                   cambiando cada cierto tiempo (NOTA: esto estaba echo con jquery pero al agregar los articulos                                             dinamicamente dejó de funcionar y por simpleza volvimos a javascript). Tambien hay una funcion de jquery                                   a ser detallada en la proxima seccion. 
+                     -opa.js    Javascript que contiene reloj de ofertas, validaciones del formulario de registro, una funcion que al                                   hacer click en "Agregar al carrito" incrementa el valor en "Mi carrito" y un arreglo de fotos que se va                                 cambiando cada cierto tiempo (NOTA: esto estaba echo con jquery pero al agregar los articulos                                           dinamicamente dejó de funcionar y por simpleza volvimos a javascript). Tambien hay una funcion de jquery                                 a ser detallada en la proxima seccion. 
                      -productos.js    Mediante una llamada ajax, consume el API rest, obtiene el listado de productos y Despliega los                                           datos.
                      -services.js     "Services facade to connect to backend"
                 -data
