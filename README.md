@@ -1,7 +1,7 @@
 # OPA WebSite
 
 Proyecto _Jovenes a Programar 2017_ - Matias Segade - Antonio Pilo
-    Opa es una página web de ofertas. 
+Opa es una página web de ofertas tales como restaurantes, estetica, hoteles, viajes, etc.
 
 GUIA DE FOLDER/ARCHIVOS
 -----------------------
@@ -18,7 +18,7 @@ GUIA DE FOLDER/ARCHIVOS
                                 dinamicamente dejó de funcionar y por simpleza volvimos a javascript). Tambien hay una funcion de jquery 
                                 a ser detallada en la proxima seccion.
         
-                     -productos.js    Mediante una llamada ajax, consume el API rest, obtiene el listado de productos y Despliega los 
+                     -productos.js    Mediante una llamada ajax, consume el API rest, obtiene el listado de productos y despliega los 
                                       datos.
                      -services.js     "Services facade to connect to backend"
                 -data
