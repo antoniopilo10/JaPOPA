@@ -26,7 +26,7 @@ function renderHTML (data) {
         '<p id="titulos">' + data[i].name + '</p>' +
         '<p>' + data[i].descripcion + '</p>' + '<br>'+
         '<p id="precio" >' + data[i].precio + '</p>' +
-        '<input type="button" onClick="incrementar()" value="Agregar al carrito" id ="botoncar" class="btn">'; 
+        '<input type="button" onClick="incrementar();" value="Agregar al carrito" id ="botoncar" class="btn">'; 
         // Agregamos en el contenedor de productos el html para cada dato del listado
         products.append(html);
     });
@@ -50,9 +50,12 @@ function mostrarFiltros() {
 
 }
 
+
 mostrarFiltros();
 // Ejecucion del metodo mostrarProductos
 mostrarProductos();
+
+
 
 
 
