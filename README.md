@@ -13,10 +13,10 @@ GUIA DE FOLDER/ARCHIVOS
                 -imagenes   Claramente contiene las imagenes utilizadas
                 -js
                      -opa.js    Javascript que contiene reloj de ofertas, validaciones del formulario de registro, una funcion que al
-                     hacer click en "Agregar al carrito" incrementa el valor en "Mi carrito" y un arreglo de fotos que se va 
-                     cambiando cada cierto tiempo (NOTA: esto estaba echo con jquery pero al agregar los articulos
-                     dinamicamente dejó de funcionar y por simpleza volvimos a javascript). Tambien hay una funcion de jquery  
-                     a ser detallada en la proxima seccion.
+                                hacer click en "Agregar al carrito" incrementa el valor en "Mi carrito" y un arreglo de fotos que se va 
+                                cambiando cada cierto tiempo (NOTA: esto estaba echo con jquery pero al agregar los articulos
+                                dinamicamente dejó de funcionar y por simpleza volvimos a javascript). Tambien hay una funcion de jquery 
+                                a ser detallada en la proxima seccion.
         
                      -productos.js    Mediante una llamada ajax, consume el API rest, obtiene el listado de productos y Despliega los 
                                       datos.
@@ -28,8 +28,16 @@ GUIA DE FOLDER/ARCHIVOS
 FUNCIONALIDADES
 ---------------
     -Registro de usuario
-                        Formulario para registro de usuario validado con required de html para que tenga que llenar todos los campos y con                         javascript, esto ultimo se utilizo para que el usuario no pueda poner una contraseña y una confirmacion de                                 contraseña distinta, para que al ingresar el dia de nacimiento y el año sean factibles por ejemplo no podes decir                         que naciste el 53 de octubre de 1803. Cada uno de estos errores mencionados si succede, el formulario no se envia                         y le sale un mensaje con el error pertinente cometido por el usuario.
-                        Por ultimo, si todos los campos estan completos correctamente, al dar click "Crear Cuenta"  
+                        Formulario para registro de usuario validado con required de html para que tenga que llenar todos los campos y
+                        con javascript, esto ultimo se utilizo para que el usuario no pueda poner una contraseña y una confirmacion de
+                        contraseña distinta, para que al ingresar el dia de nacimiento y el año sean factibles por ejemplo no podes
+                        decir que naciste el 53 de octubre de 1803. Cada uno de estos errores mencionados si succede, el formulario no
+                        se envia y le sale un mensaje con el error pertinente cometido por el usuario.
+                        Por ultimo, si todos los campos estan completos correctamente, al dar click "Crear Cuenta" se oculta el
+                        formulario y aparece un mensaje informando que registro fue realizado correctamente.
+    - Ademas de lo menciononado en la seccion anterior
+                        Tenemos una flecha que aparece al bajar en la pagina, que al apretarla te desplaza hacia arriba.
+    - Los articulos están cargados dinamicamente desde un arreglo de json, utilizando json server.
                         
                         
                         
