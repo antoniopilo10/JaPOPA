@@ -1,6 +1,7 @@
 # OPA WebSite
 
 Proyecto _Jovenes a Programar 2017_ - Matias Segade - Antonio Pilo
+
 Opa es una página web de ofertas tales como restaurantes, estetica, hoteles, viajes, etc.
 
 GUIA DE FOLDER/ARCHIVOS
