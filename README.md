@@ -22,9 +22,9 @@ GUIA DE FOLDER/ARCHIVOS
                      -productos.js    Mediante una llamada ajax, consume el API rest, obtiene el listado de productos y despliega los 
                                       datos.
                      -services.js     "Services facade to connect to backend"
-                -data
-                     -info.json       Arreglo de json que contiene los productos (ofertas) a la espera de ser levantados por el  
-                                      servidor.
+          -data
+                -info.json    Arreglo de json que contiene los productos (ofertas) a la espera de ser levantados por el  
+                              servidor.
                  
 FUNCIONALIDADES
 ---------------
