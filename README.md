@@ -1,6 +1,6 @@
 # OPA WebSite
 
-Proyecto _Jovenes a Programar 2017_ - Matias Segade - Antonio Pilo
+### Proyecto _Jovenes a Programar 2017_ - Matias Segade - Antonio Pilo
 
 Opa es una página web de ofertas tales como restaurantes, estetica, hoteles, viajes, etc.
 
@@ -28,7 +28,7 @@ GUIA DE FOLDER/ARCHIVOS
                  
 FUNCIONALIDADES
 ---------------
-    -Registro de usuario
+    * Registro de usuario
                         Formulario para registro de usuario, validado con required de html para que el usuario esté obligado a llenar 
                         todos los campos.
                         Y con javascript, esto se utilizo para que el usuario no pueda ingresar una contraseña y una confirmacion de
@@ -37,9 +37,9 @@ FUNCIONALIDADES
                         se envia y le sale un mensaje con el error pertinente cometido por el usuario.
                         Por ultimo, si todos los campos estan completos correctamente, al dar click en "Crear Cuenta" se oculta el
                         formulario y aparece un mensaje informando que el registro fue realizado correctamente.
-    - Ademas de lo menciononado en la seccion anterior
+    * Ademas de lo menciononado en la seccion anterior
                         Tenemos una flecha que aparece al bajar en la pagina, que al apretarla te desplaza hacia arriba.
-    - Los articulos están cargados dinamicamente desde un arreglo de json, utilizando json server.
+    * Los articulos están cargados dinamicamente desde un arreglo de json, utilizando json server.
     
 RECURSOS INTERNOS
 -----------------
@@ -60,7 +60,7 @@ LIBRERIAS UTILIZADAS
 RECURSOS EXTERNOS UTILIZADOS
 ----------------------------
     Principalmente nos inspiramos observando paginas web como: Woow, Tienda Mia y Amazon.
-    Tambien extrajimos ideas de http://www.falconmasters.com/ y https://www.w3schools.com/
+    Tambien extrajimos ideas de [falcon masters](URL "http://www.falconmasters.com/") y https://www.w3schools.com/
     Ademas de las diapositivas presentadas en el curso y los trabajos practicos realizados.
     Todas las imagenes fueron extraidas de distintas paginas web, a excepcion del logo que fue realizado por nosotros.
     
