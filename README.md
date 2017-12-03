@@ -89,7 +89,12 @@ INSTRUCTIVO DE USO DE JSON SERVER
     7. Con esto lo que hicimos fue cargar dinamicante los articulos en venta.
     8. Ya por ultimo solo queda ingresar a index.html y navegar en nuestra pagina.
                                 
-                        
+NOTA/AGRADECIMIENTOS
+--------------------
+    Esta página fue probada en un solo navegador Google Chrome.
+    Por ultimo queremos agradecer a los profesores del curso, que se han tomado el tiempo ademas de enseñarnos, a respondernos
+    dudas no solo en el horario de clase sino tambien fuera de el.
+    Que sepan que esta humilde página es solo el comienzo. GRACIAS!!.
                         
                         
  
