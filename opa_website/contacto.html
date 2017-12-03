@@ -10,38 +10,55 @@
 	<script type="text/javascript" src="./resources/js/opa.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./resources/js/productos.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
 </head>	
 <body>
-	<header id="logo-header">
-
+	<header id="logoheader">
 		
-		<div id="img-header"> <a href="index.html"><img id="logotipo" src="./resources/imagenes/descuentosopa.jpg"></a></div>	
+		<div id="img-header"> <a href="index.html"><img id="logotipo" src="./resources/imagenes/logotipoopa.png" width="400"></a></div>
 		
-		
-		<nav id="menu">
-			<ul>
-				<li>
-					<div id="buscar">
-						<form action="" method="get"></form>
-						<label for="usuario">Ingresa tu Busqueda</label><br>
-						<input  type="search" name="nombre" id="search">
-						<input type="button" value="buscar" id="botonbuscar">
+		<nav id="topmenu">
+			<div id="buscar">
+				<form action="" method="get">
+					<input id="search" type="text" value="¿Que Estas Buscando?" onfocus="if (this.value == '¿Que Estas Buscando?') {this.value = '';}" onblur="if (this.value == '') {this.value = '¿Que Estas Buscando?';}" />
+					<input type="button" value="buscar" id="botonbuscar">
+				</form>
+			</div>
+			<div id="der">
+				<ul>
+					<li><div id="ingresa"><a href="login.html"><u><p class="carrito_ingresar">Ingresar</p></u><img id="ing" src="./resources/imagenes/ing.png"></a></div></li>
+					<li><div id="carrito">
+						<a href="micompra.html" target="blank"><u><p class="carrito_ingresar" id="carritoo">Mi carrito</p></u><img id="carro" src="./resources/imagenes/carrito.png" ></a>
 					</div>
 				</li>
-				<div class="salto"> </div>
-				<li><a href="login.html">Ingresar</a> </li>
-				
-				
-				
-			</li>	
-		</ul>
-		
+			</ul>
+		</div>
 	</nav>
-	
-	
-	
-</header>
 
+	<div class="salto"></div>
+
+	<nav id="menu">
+		<ul>
+
+
+			<li><a href="restaurantes.html">Restaurantes</a></li>
+			<li><a href="Estetica.html">Estetica</a></li>
+			<li><a href="tiempolibre.html">Tiempo Libre</a></li>
+
+			<li><a href="hoteles.html">Hoteles en uruguay</a></li>
+			<li><a href="viajes.html">Viajes Internacionales</a></li>
+			<li><a href="servicios.html">Servicios Varios</a></li>
+
+
+		</ul>
+
+	</nav>
+
+
+
+</header>
 <div class="salto"> </div>
 
 <div id="contenedorbody">
@@ -49,17 +66,17 @@
 		<section class="form">
 			<u><h1>COMUNICATE CON NOSOTROS</h1></u><br><br><br>
 
-			<form iaction="#" onsubmit="return preSubmit();">
+			<form method="post">
 
 				<div id="mensajes" >
 					<!-- No tengo ningún contenido... por ahora. -->
 				</div>	
 				
 				<table>
-					<tr><td><label for="nombreId">Nombre:</label></td><td><input id="nombreId" type="text" name="nombre" /></td></tr>
-					<tr><td><label for="apellidoId">Apellido:</label></td><td><input id="apellidoId" type="text" name="apellido" /></td></tr>
-					<tr><td><label for="telefonoId">Telefono: </label></td><td><input id="telefonoId" type="text" name="telefono" /></td></tr>
-					<tr><td><label for="emailId">Email: </label></td><td><input id="emailId" type="text" name="email" /></td></tr>
+					<tr><td><label for="nombreId">Nombre:</label></td><td><input id="nombreId" type="text" name="nombre" required="" /></td></tr>
+					<tr><td><label for="apellidoId">Apellido:</label></td><td><input id="apellidoId" type="text" name="apellido" required="" /></td></tr>
+					<tr><td><label for="telefonoId">Celular: </label></td><td><input id="telefonoId" required="" type="text" maxlength="9" pattern="[0-9]{9}"/></td></tr>
+					<tr><td><label for="emailId">Email: </label></td><td><input id="emailId" type="email" name="email" required="" /></td></tr>
 					<tr><td><label for="consultaId">Consulta</label></td><td>
 						<textarea name="comentarios" rows="10" cols="40">Escribe aquí tus comentarios</textarea>
 					</td></tr>
@@ -99,16 +116,16 @@
 
 	<div class="sobre">
 		<ul>
-			<li><p>Sobre nosotros</p></li>
+			<li><p>SOBRE NOSOTROS</p></li>
 
 			<li><a href="">¿Que Es Opa?</a></li>
 			<li><a href="">Trabaja con Nosotros</a></li>
-			<li><a href="/contacto.html">Contacto</a></li>
-			<li><a href="">sugerencias</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+			<li><a href="">Sugerencias</a></li>
 			<li>
 				<a href="https://es-la.facebook.com/" target="blank"><img src="./resources/imagenes/facebook.png" width="40px" height="40px"></a>
 				<a href="https://twitter.com/?lang=es" target="blank"><img src="./resources/imagenes/twitter.png" width="40px" height="40px"></a>
-				<!-- <a href="https://www.instagram.com/?hl=es" target="blank"><img src="./resources/imagenes/instagram.png" width="40px" height="40px"></a> -->
+				<a href="https://www.instagram.com/?hl=es" target="blank"><img src="./resources/imagenes/instagram.png" width="40px" height="40px"></a> 
 
 			</li>
 		</ul>
@@ -116,15 +133,15 @@
 
 	<div class="cat">
 		<ul>
-			<li><p>Categorias</p></li>
+			<li><p>CATEGORIAS</p></li>
 
-			<li><a href="/index.html">index</a></li>
-			<li><a href="/restaurantes.html">Restaurantes</a></li>
-			<li><a href="/Estetica.html">Estetica</a></li>
-			<li><a href="/tiempolibre.html">Tiempo Libre</a></li>
-			<li><a href="/hoteles.html">Hoteles en Uruguay</a></li>
-			<li><a href="/Viajes.html">Viajes Internacionales</a></li>
-			<li><a href="/servicios.html">Servicios Varios</a></li>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="restaurantes.html">Restaurantes</a></li>
+			<li><a href="Estetica.html">Estetica</a></li>
+			<li><a href="tiempolibre.html">Tiempo Libre</a></li>
+			<li><a href="hoteles.html">Hoteles en Uruguay</a></li>
+			<li><a href="Viajes.html">Viajes Internacionales</a></li>
+			<li><a href="servicios.html">Servicios Varios</a></li>
 		</ul>
 	</div>
 	<div class="re"></div>
@@ -134,11 +151,11 @@
 		<img src="./resources/imagenes/ae.png" width="40px" height="40px">
 		<img src="./resources/imagenes/citi.png" width="40px" height="40px">
 		<img src="./resources/imagenes/master.png" width="40px" height="40px">
-
+		<div id="img-footer"> <a href="index.html"><img id="logotipo" src="./resources/imagenes/logotipoopa.png" width="400"></a></div>
 	</div>
-
+	
+	
 </footer>
-
 
 </body>
 </html>

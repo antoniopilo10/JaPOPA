@@ -10,24 +10,27 @@
 	<script type="text/javascript" src="./resources/js/opa.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./resources/js/productos.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
 </head>	
 <body>
-	<header id="logo-header">
-
-		<div id="img-header"> <a href="index.html"><img id="logotipo" src="./resources/imagenes/logotipoopa.png"></a></div>
+	<header id="logoheader">
+		
+		<div id="img-header"> <a href="index.html"><img id="logotipo" src="./resources/imagenes/logotipoopa.png" width="400"></a></div>
 		
 		<nav id="topmenu">
 			<div id="buscar">
 				<form action="" method="get">
-					<input id="search" type="text" value="Ingresa tu busqueda..." onfocus="if (this.value == 'Ingresa tu busqueda...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Ingresa tu busqueda...';}" />
-					<input type="button" value="buscar" id="botonbuscar">
+					<input id="search" type="text" value="¿Que Estas Buscando?" onfocus="if (this.value == '¿Que Estas Buscando?') {this.value = '';}" onblur="if (this.value == '') {this.value = '¿Que Estas Buscando?';}" />
+					<input type="button" value="Buscar" id="botonbuscar">
 				</form>
 			</div>
 			<div id="der">
 				<ul>
-					<li><div id="ingresa"><a href="login.html"><p>Ingresar</p><img id="ing" src="./resources/imagenes/ing.png"></a></div></li>
+					<li><div id="ingresa"><a href="login.html"><u><p class="carrito_ingresar">Ingresar</p></u><img id="ing" src="./resources/imagenes/ing.png"></a></div></li>
 					<li><div id="carrito">
-						<a href="micompra.html" target="blank"><p>Mi carrito</p><img id="carro" src="./resources/imagenes/carrito.png" ></a>
+						<a href="micompra.html" target="blank"><u><p class="carrito_ingresar" id="carritoo">Mi carrito</p></u><img id="carro" src="./resources/imagenes/carrito.png" ></a>
 					</div>
 				</li>
 			</ul>
@@ -59,160 +62,115 @@
 
 <div class="salto"> </div>
 
-<div id="contenedorbody">
-
+<div id="contenedorbodyindex">
 	
+	<div id="ofertasdeldia">
+		<h1>OFERTAS DEL DIA</h1>
+		<h2 id="demo">Las ofertas finalizan en</h2>
+		<div id="reloj">
+
+			<div>
+				<span id="horas"></span>
+				<div class="texto">Horas</div>
+			</div>
+			<div>
+				<span id="minutos"></span>
+				<div class="texto">Minutos</div>
+			</div>
+			<div>
+				<span id="segundos"></span>
+				<div class="texto">Segundos</div>
+			</div>
+		</div>
+
 
 	</div>
+</div>
 
 
+<section class="lateral">
 
-
-	<section class="lateral">
+	
+	<div class="main">
+		<iframe  src="https://www.indumex.com/" frameborder="0"></iframe>
 		
-		<div>
-			<img src="./resources/imagenes/autoslider2.jpg" alt="" width="370px" height="1000px">
+
+		<div class="slides2">
+			<img src="./resources/imagenes/descuentovisa.png" alt="" height="100" >
+			<img src="./resources/imagenes/descuento10.jpg" alt="">
+			<img src="./resources/imagenes/descuentociti.jpg" alt="">
+			<img src="./resources/imagenes/descuentomaster.jpg" alt="" >
+		</div>
+		<div id="cont_697df851cd384ca5136792ea2cd722ef">
+			<script type="text/javascript" async src="https://www.tiempo.com/wid_loader/697df851cd384ca5136792ea2cd722ef"></script>
+		</div>
+	</div>
+	
+</section>
+<article class="principal">
+
+			 <img src="" id="slides">
+
+
+		<div id="products" class="articulo">
 			
-		</div>
-
-	</section>
-	<article class="principal">
-
-		<div class="articulos">
-			<div class="articulo">
-				<a href=""><img class="imagenart" src="./resources/imagenes/resto.jpg" ></a>
-				<p id="titulos">restaurante SORRENTO</p>
-				<p>Cena para 2 buffet + Tenedor libre de pastas + carnes,pescado,pollo y ensaladas a eleccion</p><br>
-				<p id="precio">$550</p>
-			</div>
-		</div>
-
-		<div class="articulos">
-			<div class="articulo">
-				<a href=""><img class="imagenart" src="./resources/imagenes/mascara.jpg" ></a>
-				<p id="titulos">Mascara Facial</p>
-				<p>Limpieza de cutis + puntas de diamante + máscara tonificante</p><br>
-				<p id="precio">$300</p>
-			</div>
-		</div>
-
-		<div class="articulos">
-			<div class="articulo">
-				<a href=""><img class="imagenart" src="./resources/imagenes/hotelbarcelo.jpg" ></a>
-				<p id="titulos">Escapada en familia</p>
-				<p> 2 o 4 noches para 2 o 4 adultos y 2 menores + desayuno buffe</p><br>
-				<p id="precio">$3550</p>
-			</div>
-		</div>
-
-		<div class="articulos">
-			<div class="articulo">
-				<a href=""><img class="imagenart" src="./resources/imagenes/arequita.jpg" ></a>
-				<p id="titulos">Cerro Arequita</p>
-				<p>Visita Guiada por el Cerro Arequita</p><br>
-				<p id="precio">$400</p>
-			</div>
-		</div>
-
-		<div class="articulos">
-			<div class="articulo">
-				<a href=""><img class="imagenart" src="./resources/imagenes/dweb.jpg" ></a>
-				<p id="titulos">Curso Desarrollo Web</p>
-				<p>Desarrollo web En Montevideo</p><br>
-				<p id="precio">$9000</p>
-			</div>
-		</div>
-
-		<div class="articulos">
-			<div class="articulo">
-				<a href=""><img class="imagenart" src="./resources/imagenes/galaxys8.jpg" ></a>
-				<p id="titulos">Samsung Galaxy S8</p>
-				<p>El Nuevo Smartphone De Samsung a un Precio Increible</p>
-				<p id="precio">U$S900</p>
-			</div>
-		</div>
-
-		<div class="articulos">
-			<div class="articulo">
-				<a href=""><img class="imagenart" src="./resources/imagenes/Samsungheladera.jpg" ></a>
-				<p id="titulos">Heladera Samsung</p>
-				<p>Sistema Twin cooling plus</p><br>
-				<p id="precio">U$S1049</p>
-			</div>
-		</div>
-
-		<div class="articulos">
-			<div class="articulo">
-				<a href=""><img class="imagenart" src="./resources/imagenes/teparados.jpg" ></a>
-				<p id="titulos">Te Para Dos</p>
-				<p>Te Completo Para Dos</p><br>
-				<p id="precio">$450</p>
-			</div>
-		</div>
-
-		<div class="articulos">
-			<div class="articulo">
-				<a href=""><img class="imagenart" src="./resources/imagenes/sushi.jpg" ></a>
-				<p id="titulos">Sushi para dos</p>
-				<p>Sushi en tabla para dos personas</p><br>
-				<p id="precio">$750</p>
-			</div>
-		</div>
-
-
-
-
-
-	</article>
-
-
-	<div class="salto"> </div>
-
-
-	<footer> 
-
-		<div class="sobre">
-			<ul>
-				<li><p>Sobre nosotros</p></li>
-
-				<li><a href="">¿Que Es Opa?</a></li>
-				<li><a href="">Trabaja con Nosotros</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
-				<li><a href="">sugerencias</a></li>
-				<li>
-					<a href="https://es-la.facebook.com/" target="blank"><img src="./resources/imagenes/facebook.png" width="40px" height="40px"></a>
-					<a href="https://twitter.com/?lang=es" target="blank"><img src="./resources/imagenes/twitter.png" width="40px" height="40px"></a>
-					<a href="https://www.instagram.com/?hl=es" target="blank"><img src="./resources/imagenes/instagram.png" width="40px" height="40px"></a> 
-
-				</li>
-			</ul>
-		</div>
-
-		<div class="cat">
-			<ul>
-				<li><p>Categorias</p></li>
-
-				<li><a href="index.html">index</a></li>
-				<li><a href="restaurantes.html">Restaurantes</a></li>
-				<li><a href="Estetica.html">Estetica</a></li>
-				<li><a href="tiempolibre.html">Tiempo Libre</a></li>
-				<li><a href="hoteles.html">Hoteles en Uruguay</a></li>
-				<li><a href="Viajes.html">Viajes Internacionales</a></li>
-				<li><a href="servicios.html">Servicios Varios</a></li>
-			</ul>
-		</div>
-		<div class="re"></div>
-		<div class="pago">
-			<p>FORMAS DE PAGO</p><br>
-			<img src="./resources/imagenes/visa.png" width="40px" height="40px">
-			<img src="./resources/imagenes/ae.png" width="40px" height="40px">
-			<img src="./resources/imagenes/citi.png" width="40px" height="40px">
-			<img src="./resources/imagenes/master.png" width="40px" height="40px">
 
 		</div>
 
-	</footer>
 
+
+
+</article>
+
+	<a href="#" class="scrollup">Scroll</a>
+
+<div class="salto"> </div>
+
+
+<footer> 
+
+	<div class="sobre">
+		<ul>
+			<li><p>SOBRE NOSOTROS</p></li>
+
+			<li><a href="">¿Que Es Opa?</a></li>
+			<li><a href="">Trabaja con Nosotros</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+			<li><a href="">Sugerencias</a></li>
+			<li>
+				<a href="https://es-la.facebook.com/" target="blank"><img src="./resources/imagenes/facebook.png" width="40px" height="40px"></a>
+				<a href="https://twitter.com/?lang=es" target="blank"><img src="./resources/imagenes/twitter.png" width="40px" height="40px"></a>
+				<a href="https://www.instagram.com/?hl=es" target="blank"><img src="./resources/imagenes/instagram.png" width="40px" height="40px"></a> 
+
+			</li>
+		</ul>
+	</div>
+
+	<div class="cat">
+		<ul>
+			<li><p>CATEGORIAS</p></li>
+
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="restaurantes.html">Restaurantes</a></li>
+			<li><a href="Estetica.html">Estetica</a></li>
+			<li><a href="tiempolibre.html">Tiempo Libre</a></li>
+			<li><a href="hoteles.html">Hoteles en Uruguay</a></li>
+			<li><a href="Viajes.html">Viajes Internacionales</a></li>
+			<li><a href="servicios.html">Servicios Varios</a></li>
+		</ul>
+	</div>
+	<div class="re"></div>
+	<div class="pago">
+		<p>FORMAS DE PAGO</p><br>
+		<img src="./resources/imagenes/visa.png" width="40px" height="40px">
+		<img src="./resources/imagenes/ae.png" width="40px" height="40px">
+		<img src="./resources/imagenes/citi.png" width="40px" height="40px">
+		<img src="./resources/imagenes/master.png" width="40px" height="40px">
+		<div id="img-footer"> <a href="index.html"><img id="logotipo" src="./resources/imagenes/logotipoopa.png" width="400"></a></div>
+	</div>
+	
+	
+</footer>
 
 </body>
 </html>

@@ -234,7 +234,7 @@ section #sobrenosotros {
 }
 
 #login {
-	background-image: url("http://www.ariva.com.ph/wp-content/uploads/2015/03/SUMMER-HEADER-2015.png");
+	background: lightblue;
 	width:100%;
 	/*padding-left:350px;*/
 	padding-bottom:10px;
@@ -248,7 +248,7 @@ section #sobrenosotros {
 }
 
 #loginregistro {
-	background-image: url("http://www.ariva.com.ph/wp-content/uploads/2015/03/SUMMER-HEADER-2015.png");
+	background: lightblue; 
 	width:100%;
 	/*padding-left:350px;*/
 	padding-bottom:10px;
@@ -257,7 +257,6 @@ section #sobrenosotros {
 	font-size:15px;
 	font-family:verdana;
 	color:black;
-	background-size:cover;
 	text-align: center;
 }
 
@@ -415,7 +414,7 @@ section #sobrenosotros {
 
 }
 .articulo p {
-	text-align: left;
+	text-align: center;
 	color:red;
 	font-family: "Homer Simpson", cursive;
 }
@@ -431,7 +430,7 @@ section #sobrenosotros {
 #titulos {
 	font-size:25px;
 	font-family: "Homer Simpson", cursive;
-	text-align: left;
+	text-align: center;
 	color:black;
 }
 
@@ -493,13 +492,13 @@ section #sobrenosotros {
 
 .form{
 
-	background:; 
 	margin:0 auto; 
 	/*padding-left:50px;*/ 
 	padding-top:20px;
 	width:100%;
-	float:left;
 }
+
+
 
 .form fieldset {border:0px; padding:0px; margin:0px;}
 
@@ -587,8 +586,7 @@ input{
 	.form input.buttom:hover    { background-color: #2a78f6; }
 
 	#formulario {
-		background-image: url("http://www.ariva.com.ph/wp-content/uploads/2015/03/SUMMER-HEADER-2015.png");
-		background-size:cover;
+		background: lightblue;
 		float: right;
 		width: 100%;
 	}

@@ -178,3 +178,11 @@ $( "form" ).submit(function( event ) {
     function incrementar() { 
         document.getElementById("carritoo").innerHTML = "Mi carrito " + "(" + contador++ + ")";
       } 
+
+      //funcion que cambia el "Ingresar" del header por el nombre del usuario
+      //ademas le da un mensaje de bienvenida
+  function logueo() {
+    var user = document.loginn.user.value;
+    document.getElementById("logmen").innerHTML = "Bienvenido " + user; 
+     document.getElementById("bienmen").innerHTML = user;  
+  }

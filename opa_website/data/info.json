@@ -2,7 +2,7 @@
     {
       "id": 1,
       "name": "Restaurante Sorrento",
-      "descripcion": "Cena para 2 buffet + carnes,pescado,pollo y ensaladas a eleccion",
+      "descripcion": "Cena para 2 buffet + carnes,pescado,pollo y ensaladas",
       "imagen": "resources/imagenes/resto.jpg",
       "precio": "$550"
     },
@@ -23,14 +23,14 @@
     {
       "id": 4,
       "name": "Cerro Arequita",
-      "descripcion": "Visita Guiada por el Cerro Arequita",
+      "descripcion": "Visita guiada, para disfrutar al aire libre",
       "imagen": "resources/imagenes/arequita.jpg",
       "precio": "$400"
     },
     {
       "id": 5,
       "name": "Curso Desarrollo Web",
-      "descripcion": "Desarrollo web En Montevideo",
+      "descripcion": "Desarrollo web en Montevideo, alta insercion laboral",
       "imagen": "resources/imagenes/dweb.jpg",
       "precio": "$9000"
     },
