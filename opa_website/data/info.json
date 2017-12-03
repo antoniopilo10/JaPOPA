@@ -23,7 +23,7 @@
     {
       "id": 4,
       "name": "Cerro Arequita",
-      "descripcion": "Visita guiada, para disfrutar al aire libre",
+      "descripcion": "Visita guiada, para disfrutar al aire libre en familia",
       "imagen": "resources/imagenes/arequita.jpg",
       "precio": "$400"
     },
